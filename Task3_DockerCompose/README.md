@@ -49,3 +49,44 @@ docker-compose up --build
 ```bash
 docker-compose ps
 ```
+
+### Check logs of all services
+```bash
+docker-compose logs
+```
+
+### Follow logs (like `tail -f`)
+```bash
+docker-compose logs -f
+```
+
+### Run a command inside a container
+```bash
+docker-compose exec <service_name> <command>
+# Example: docker-compose exec app bash
+```
+
+### Stop a specific service
+```bash
+docker-compose stop <service_name>
+```
+
+### Remove stopped containers + networks + volumes
+```bash
+docker-compose down -v
+```
+
+### Restart services
+```bash
+docker-compose restart
+```
+
+### Build or rebuild services without starting
+```bash
+docker-compose build
+```
+
+---
+
+✅ Use these commands as reference while working with Docker Compose in this project.
+
