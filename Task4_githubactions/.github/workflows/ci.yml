@@ -1,0 +1,9 @@
+name: Simple CI
+on: [push]   # jab bhi push hoga, ye run karega
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Say hello
+        run: "echo Hello from GitHub Actions! branch: ${{ github.ref }}"
