@@ -67,3 +67,39 @@ Containers ensure that applications run consistently across different environmen
 - **`docker rmi <image-id>`**  
   Removes a Docker image.  
   ✅ *Use case*: Delete unused images to free up disk space.  
+
+
+### 🔹 Networking & Volumes
+
+- **`docker network ls`**  
+  Lists all available Docker networks.  
+  ✅ *Use case*: View networks for container communication.  
+  🔹 *Example*:  
+  ```bash
+  docker network ls
+  ```
+
+- **`docker network create <network-name>`**  
+  Creates a custom Docker network.  
+  ✅ *Use case*: Allow secure communication between containers.  
+  🔹 *Example*:  
+  ```bash
+  docker network create my_network
+  ```
+
+- **`docker volume create <volume-name>`**  
+  Creates a persistent Docker volume.  
+  ✅ *Use case*: Store data (e.g., database files) outside of a container’s lifecycle.  
+  🔹 *Example*:  
+  ```bash
+  docker volume create my_volume
+  ```
+
+- **`docker run -v <volume-name>:/path <image>`**  
+  Mounts a volume to a container.  
+  ✅ *Use case*: Persist application data across container restarts.  
+  🔹 *Example*:  
+  ```bash
+  docker run -d -v my_volume:/var/lib/mysql mysql
+
+
