@@ -26,3 +26,30 @@ Containers ensure that applications run consistently across different environmen
 - **`docker pull <image>`**  
   Downloads a Docker image from Docker Hub or another registry.  
   ✅ *Use case*: Fetch an image (e.g., `nginx`, `ubuntu`) for local use.  
+
+
+### 🔹 Container Management
+
+- **`docker run <image>`**  
+  Runs a container from a specified image.  
+  ✅ *Use case*: Start a new container, e.g., `docker run nginx` to run an Nginx server.  
+
+- **`docker run -d <image>`**  
+  Runs a container in detached (background) mode.  
+  ✅ *Use case*: Run a service (like a database) without tying up your terminal.  
+
+- **`docker ps`**  
+  Lists all running containers.  
+  ✅ *Use case*: See which containers are currently active.  
+
+- **`docker ps -a`**  
+  Lists all containers (running + stopped).  
+  ✅ *Use case*: View stopped containers for debugging or cleanup.  
+
+- **`docker stop <container-id>`**  
+  Stops a running container gracefully.  
+  ✅ *Use case*: Shut down a test or service when done.  
+
+- **`docker rm <container-id>`**  
+  Removes a stopped container.  
+  ✅ *Use case*: Clean up unused containers and free resources.  
