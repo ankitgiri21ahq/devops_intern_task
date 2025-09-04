@@ -53,3 +53,17 @@ Containers ensure that applications run consistently across different environmen
 - **`docker rm <container-id>`**  
   Removes a stopped container.  
   ✅ *Use case*: Clean up unused containers and free resources.  
+
+### 🔹 Image Management
+
+- **`docker images`**  
+  Lists all Docker images available locally.  
+  ✅ *Use case*: Check which images are stored on your machine.  
+
+- **`docker build -t <image-name> .`**  
+  Builds a Docker image from a Dockerfile in the current directory.  
+  ✅ *Use case*: Create a custom image for your application.  
+
+- **`docker rmi <image-id>`**  
+  Removes a Docker image.  
+  ✅ *Use case*: Delete unused images to free up disk space.  
