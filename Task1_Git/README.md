@@ -57,3 +57,17 @@
   git branch feature-login
   ```
 
+- **`git checkout <branch-name>`**  
+  Switches to the specified branch.  
+  ✅ Use case: Move to another branch to work on specific tasks.  
+  🔹 Example:
+  ```
+  git checkout feature-login
+  ``` 
+- **`git checkout -b <branch-name>`**  
+  Creates and switches to a new branch in a single command.  
+  ✅ Use case: Quickly start working on a new feature branch.  
+  🔹 Example:  
+  ```  
+  git checkout -b feature-payment
+  ```
