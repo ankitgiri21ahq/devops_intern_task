@@ -71,3 +71,32 @@
   ```  
   git checkout -b feature-payment
   ```
+
+
+## Step 5: Stage & Commit Changes  
+
+- **`git add <file>`**  
+  Stages a specific file for the next commit.  
+  ✅ *Use case*: Add only the selected file to be included in the commit.  
+  🔹 *Example*:  
+  ```bash
+  git add hello.txt
+  ```
+
+* **`git add .`**  
+  Stages all modified and new files in the current directory.  
+  ✅ *Use case*: Quickly stage all changes at once.  
+  🔹 *Example*:
+
+  ```bash
+  git add .
+  ```
+
+* **`git commit -m "message"`**  
+  Records the staged changes into Git history with a descriptive message.  
+  ✅ *Use case*: Save a snapshot of your project with a clear description of what was changed.  
+  🔹 *Example*:
+
+  ```bash
+  git commit -m "Added hello.txt with sample content"
+  ```
