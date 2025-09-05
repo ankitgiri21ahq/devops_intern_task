@@ -35,3 +35,25 @@
     (use "git add <file>..." to include in what will be committed)
       newfile.txt
   nothing added to commit but untracked files present
+  ```
+
+---
+
+## Step 4: Branching Commands  
+
+- **`git branch`**  
+  Lists all branches in the repository.  
+  ✅ *Use case*: Check available branches and see which branch you are currently on.  
+  🔹 *Example*:  
+  ```bash
+  git branch
+  ```
+
+- **`git branch <branch-name>`**  
+  Creates a new branch.   
+  ✅ Use case: Start a new feature or bugfix without affecting the main branch.   
+  🔹 Example:
+  ```
+  git branch feature-login
+  ```
+
