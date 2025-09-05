@@ -21,3 +21,17 @@
   git clone https://github.com/user/project.git
   ```
 
+---
+
+## Step 3: Check Repository Status  
+
+- **`git status`**  
+  Displays the state of the working directory and staging area.  
+  ✅ *Use case*: See which files are untracked, modified, or staged for commit.  
+  🔹 *Example Output*:  
+  ```bash
+  On branch main
+  Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+      newfile.txt
+  nothing added to commit but untracked files present
