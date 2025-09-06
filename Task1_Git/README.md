@@ -100,3 +100,41 @@
   ```bash
   git commit -m "Added hello.txt with sample content"
   ```
+
+
+## Step 6: Remote Repository Commands  
+
+- **`git remote add origin <repo-url>`**  
+  Links your local repository to a remote one (e.g., GitHub, GitLab).  
+  ✅ *Use case*: Connect your local project to a remote repository for collaboration.  
+  🔹 *Example*:  
+  ```bash
+  git remote add origin https://github.com/user/project.git
+  ```
+
+* **`git push origin <branch-name>`**  
+  Uploads local branch commits to the remote repository.  
+  ✅ *Use case*: Share your changes with the team or back them up remotely.   
+  🔹 *Example*:
+
+  ```bash
+  git push origin main
+  ```
+
+* **`git pull origin <branch-name>`**   
+  Fetches and merges changes from the remote branch into the current branch.    
+  ✅ *Use case*: Sync your local repository with the latest remote changes.   
+  🔹 *Example*:
+
+  ```bash
+  git pull origin main
+  ```
+
+* **`git fetch origin`**    
+  Downloads changes from the remote without merging them.   
+  ✅ *Use case*: Review remote changes before merging.    
+  🔹 *Example*:
+
+  ```bash
+  git fetch origin
+  ```
