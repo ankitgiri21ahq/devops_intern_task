@@ -138,3 +138,26 @@
   ```bash
   git fetch origin
   ```
+
+
+## Step 7: Merging & Rebasing  
+
+- **`git merge <branch-name>`**  
+  Combines changes from the specified branch into the current branch.  
+  ✅ *Use case*: Integrate a completed feature branch into `main` or another branch.  
+  🔹 *Example*:  
+  ```bash
+  git checkout main
+  git merge feature-login
+  ```
+
+* **`git rebase <branch-name>`**  
+  Reapplies commits from the current branch on top of another branch, creating a cleaner, linear history.   
+  ✅ *Use case*: Keep project history tidy by avoiding unnecessary merge commits.   
+  🔹 *Example*:
+
+  ```bash
+  git checkout feature-login
+  git rebase main
+  ```
+
