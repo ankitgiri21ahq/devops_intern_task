@@ -161,3 +161,31 @@
   git rebase main
   ```
 
+
+## Step 8: Stash Commands  
+
+- **`git stash`**  
+  Temporarily saves uncommitted changes and cleans your working directory.  
+  ✅ *Use case*: Switch branches without committing unfinished work.  
+  🔹 *Example*:  
+  ```bash
+  git stash
+  ```
+
+* **`git stash list`**    
+  Shows all stashed changes.    
+  ✅ *Use case*: Review previously stashed work.    
+  🔹 *Example*:
+
+  ```bash
+  git stash list
+  ```
+
+* **`git stash pop`**   
+  Restores the most recently stashed changes and removes them from the stash list.    
+  ✅ *Use case*: Retrieve your saved changes to continue working.   
+  🔹 *Example*:
+
+  ```bash
+  git stash pop
+  ```
