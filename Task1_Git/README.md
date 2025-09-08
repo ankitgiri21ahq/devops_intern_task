@@ -189,3 +189,33 @@
   ```bash
   git stash pop
   ```
+
+
+## Step 9: Undo & Reset  
+
+- **`git reset --hard <commit-hash>`**  
+  Resets the current branch to a specific commit and discards all changes after it. ⚠️ *Dangerous — changes will be lost.*  
+  ✅ *Use case*: Completely undo unwanted commits and restore a previous state.  
+  🔹 *Example*:  
+  ```bash
+  git reset --hard a1b2c3d
+  ```
+
+* **`git revert <commit-hash>`**  
+  Creates a new commit that reverses the changes of a specific commit.  
+  ✅ *Use case*: Safely undo changes without losing history (preferred in team projects). 
+  🔹 *Example*:
+
+  ```bash
+  git revert a1b2c3d
+  ```
+
+* **`git checkout -- <file>`**  
+  Discards changes in a file and restores it from the last commit.  
+  ✅ *Use case*: Undo modifications in a single file before committing. 
+  🔹 *Example*:
+
+  ```bash
+  git checkout -- index.html
+  ```
+
